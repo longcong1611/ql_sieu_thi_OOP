@@ -131,16 +131,14 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" max="-2" attributes="0">
                           <Component id="jpnVitrisanpham" max="32767" attributes="0"/>
-                          <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
-                              <Component id="jpnThoat" max="32767" attributes="0"/>
-                              <Component id="jpnKhachhang" alignment="1" max="32767" attributes="0"/>
-                              <Component id="jpnNhaphang" alignment="0" max="32767" attributes="0"/>
-                              <Component id="jpnSanpham" max="32767" attributes="0"/>
-                              <Component id="jpnTrangchu" alignment="1" max="32767" attributes="0"/>
-                              <Component id="jpnNhanvien" alignment="1" max="32767" attributes="0"/>
-                              <Component id="jpnThongke" alignment="1" max="32767" attributes="0"/>
-                              <Component id="jpnKhuyenmai" max="32767" attributes="0"/>
-                          </Group>
+                          <Component id="jpnThoat" max="32767" attributes="0"/>
+                          <Component id="jpnKhachhang" alignment="1" max="32767" attributes="0"/>
+                          <Component id="jpnNhaphang" alignment="0" max="32767" attributes="0"/>
+                          <Component id="jpnSanpham" max="32767" attributes="0"/>
+                          <Component id="jpnTrangchu" alignment="1" max="32767" attributes="0"/>
+                          <Component id="jpnNhanvien" alignment="1" max="32767" attributes="0"/>
+                          <Component id="jpnThongke" alignment="1" max="32767" attributes="0"/>
+                          <Component id="jpnKhuyenmai" max="32767" attributes="0"/>
                           <Component id="jpnHoadon" alignment="1" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace max="32767" attributes="0"/>

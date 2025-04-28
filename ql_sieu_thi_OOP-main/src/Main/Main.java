@@ -1,6 +1,6 @@
 package Main;
 
-import QuanLySieuThi.GiaoDien.MainJFrame;
+import GiaoDien.MainJFrame;
 
 public class Main {
     public static void main(String[] args){

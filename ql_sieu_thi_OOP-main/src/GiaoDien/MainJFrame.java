@@ -1,4 +1,4 @@
-package QuanLySieuThi.GiaoDien;
+package GiaoDien;
 
 import Bean.DanhMucBean;
 import Controller.ChuyenManHinhController;

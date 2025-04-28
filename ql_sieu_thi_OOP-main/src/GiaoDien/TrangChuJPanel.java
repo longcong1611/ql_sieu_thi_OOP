@@ -1,4 +1,4 @@
-package QuanLySieuThi.GiaoDien;
+package GiaoDien;
 
 public class TrangChuJPanel extends javax.swing.JPanel {
     public TrangChuJPanel() {

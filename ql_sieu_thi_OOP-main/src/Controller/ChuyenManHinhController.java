@@ -2,8 +2,8 @@
 package Controller;
 
 import Bean.DanhMucBean;
-import View.SanPhamJPanel;
-import View.TrangChuJPanel;
+import GiaoDien.SanPhamJPanel;
+import GiaoDien.TrangChuJPanel;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.event.MouseEvent;

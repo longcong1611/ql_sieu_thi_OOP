@@ -1,4 +1,4 @@
-package QuanLySieuThi.XuLy;
+package XuLy;
 
 /**
  *

@@ -1,4 +1,4 @@
-package QuanLySieuThi.TrungGian;
+package TrungGian;
 
 /**
  *
