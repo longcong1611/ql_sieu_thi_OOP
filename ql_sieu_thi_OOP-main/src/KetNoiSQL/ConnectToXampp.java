@@ -10,9 +10,9 @@ import java.util.logging.Logger;
  */
 public class ConnectToXampp {
     public static Connection conn = null;
-    public ConnectToXampp(){
+    static {
         try{
-        String url = "jdbc:mysql://localhost:3306/quanlysieuthi";
+        String url = "jdbc:mysql://localhost:3307/quanlysieuthi";
         String username = "root";
         String password = "";
         conn = DriverManager.getConnection(url, username, password);
@@ -22,5 +22,4 @@ public class ConnectToXampp {
             Logger.getLogger(ConnectToXampp.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-
 }
