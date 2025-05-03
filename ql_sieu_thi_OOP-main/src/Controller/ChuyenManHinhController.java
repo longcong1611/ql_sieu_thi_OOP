@@ -2,8 +2,10 @@
 package Controller;
 
 import Bean.DanhMucBean;
+import GiaoDien.KhachHangJPanel;
 import GiaoDien.SanPhamJPanel;
 import GiaoDien.TrangChuJPanel;
+import GiaoDien.ViTriSPJPanel;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.event.MouseEvent;
@@ -59,6 +61,12 @@ public class ChuyenManHinhController {
                     break;
                 case "Sanpham":
                     node = new SanPhamJPanel();
+                    break;
+                case "Khachhang":
+                    node = new KhachHangJPanel();
+                    break;
+                case "Vitrisanpham":
+                    node = new ViTriSPJPanel();
                     break;
                     default:
                      node = new TrangChuJPanel();   
