@@ -79,6 +79,12 @@ public class ChuyenManHinhController {
                 case "Hoadon":
                     node = new HoaDonJPanel();
                     break;
+                case "Thoat":
+                    int confirm = JOptionPane.showConfirmDialog(null, "Bạn có chắc chắn muốn thoát?", "Xác nhận thoát", JOptionPane.YES_NO_OPTION);
+                    if (confirm == JOptionPane.YES_OPTION) {
+                        System.exit(0);
+                    }
+                    return;
                     default:
                      node = new TrangChuJPanel();   
                         break;
