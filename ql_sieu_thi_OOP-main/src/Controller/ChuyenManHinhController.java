@@ -13,7 +13,6 @@ import java.awt.event.MouseListener;
 import java.util.List;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import org.w3c.dom.Node;
 
 public class ChuyenManHinhController {
     private JPanel root;
@@ -68,9 +67,6 @@ public class ChuyenManHinhController {
                 case "Vitrisanpham":
                     node = new ViTriSPJPanel();
                     break;
-                case "Thongke":
-                    node = new ThongkeJPanel();
-                    break; 
                     default:
                      node = new TrangChuJPanel();   
                         break;
