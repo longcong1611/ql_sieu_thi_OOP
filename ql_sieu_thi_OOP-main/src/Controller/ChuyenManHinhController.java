@@ -67,6 +67,12 @@ public class ChuyenManHinhController {
                 case "Vitrisanpham":
                     node = new ViTriSPJPanel();
                     break;
+                case "Phieunhap":
+                    node = new PhieuNhapJPanel();
+                    break;
+                case "Khuyenmai":
+                    node = new KhuyenMaiJPanel();
+                    break;
                     default:
                      node = new TrangChuJPanel();   
                         break;
