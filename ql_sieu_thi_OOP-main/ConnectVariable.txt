@@ -1,3 +1,0 @@
-localhost
-ql_sieu_thi
-root
