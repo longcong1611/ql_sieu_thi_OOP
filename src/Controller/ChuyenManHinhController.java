@@ -9,6 +9,7 @@ import GiaoDien.PhieuNhapJPanel;
 import GiaoDien.HoaDonJPanel;
 import GiaoDien.TrangChuJPanel;
 import GiaoDien.ViTriSPJPanel;
+import GiaoDien.ThongKeJPanel;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.event.MouseEvent;
