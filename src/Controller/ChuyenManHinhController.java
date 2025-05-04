@@ -9,7 +9,7 @@ import GiaoDien.PhieuNhapJPanel;
 import GiaoDien.HoaDonJPanel;
 import GiaoDien.TrangChuJPanel;
 import GiaoDien.ViTriSPJPanel;
-import GiaoDien.ThongKeJPanel;
+import GiaoDien.ThongkeJPanel;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.event.MouseEvent;
@@ -81,7 +81,7 @@ public class ChuyenManHinhController {
                     node = new HoaDonJPanel();
                     break;
                 case "Thongke":
-                    node = new ThongKeJPanel();
+                    node = new ThongkeJPanel();
                     break;
                 case "Thoat":
                     int confirm = JOptionPane.showConfirmDialog(null, "Bạn có chắc chắn muốn thoát?", "Xác nhận thoát", JOptionPane.YES_NO_OPTION);
