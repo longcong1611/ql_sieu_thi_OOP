@@ -3,9 +3,15 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/C:/Users/ngotr/Desktop/ql_sieu_thi_OOP/ql_sieu_thi_OOP-main/src/KetNoiSQL/HoaDonSQL.java</file>
             <file>file:/C:/Users/ngotr/Desktop/ql_sieu_thi_OOP/ql_sieu_thi_OOP-main/src/KetNoiSQL/ConnectToXampp.java</file>
             <file>file:/C:/Users/ngotr/Desktop/ql_sieu_thi_OOP/ql_sieu_thi_OOP-main/src/TrungGian/HoaDon.java</file>
+=======
+            <file>file:/E:/Back%20up/Study/ql_sieu_thi_OOP-main/ql_sieu_thi_OOP-main/ql_sieu_thi_OOP-main/src/Controller/PhanQuyenController.java</file>
+            <file>file:/E:/Back%20up/Study/ql_sieu_thi_OOP-main/ql_sieu_thi_OOP-main/ql_sieu_thi_OOP-main/src/KetNoiSQL/MyConnect.java</file>
+            <file>file:/E:/Back%20up/Study/ql_sieu_thi_OOP-main/ql_sieu_thi_OOP-main/ql_sieu_thi_OOP-main/src/KetNoiSQL/PhanQuyenSQL.java</file>
+>>>>>>> bef1f7b (commit)
         </group>
     </open-files>
 </project-private>
