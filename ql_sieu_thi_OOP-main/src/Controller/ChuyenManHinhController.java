@@ -4,6 +4,8 @@ package Controller;
 import Bean.DanhMucBean;
 import GiaoDien.KhachHangJPanel;
 import GiaoDien.SanPhamJPanel;
+import GiaoDien.KhuyenMaiJPanel;
+import GiaoDien.PhieuNhapJPanel;
 import GiaoDien.TrangChuJPanel;
 import GiaoDien.ViTriSPJPanel;
 import java.awt.BorderLayout;
