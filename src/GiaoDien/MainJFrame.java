@@ -4,6 +4,10 @@ import Bean.DanhMucBean;
 import Controller.ChuyenManHinhController;
 import java.util.ArrayList;
 import java.util.List;
+<<<<<<< HEAD
+=======
+import javax.swing.WindowConstants;
+>>>>>>> bef1f7b (commit)
 
 public class MainJFrame extends javax.swing.JFrame {
 
@@ -11,6 +15,10 @@ public class MainJFrame extends javax.swing.JFrame {
      * Creates new form MainJFrame
      */
     public MainJFrame() {
+<<<<<<< HEAD
+=======
+        this.setUndecorated(true);
+>>>>>>> bef1f7b (commit)
         initComponents();
         setTitle("QUẢN LÝ SIÊU THỊ");
         ChuyenManHinhController controller = new ChuyenManHinhController(jpnview);
@@ -28,7 +36,15 @@ public class MainJFrame extends javax.swing.JFrame {
         listItem.add(new DanhMucBean("Vitrisanpham", jpnVitrisanpham, jlbVitrisanpham));
         controller.setEvent(listItem);
     }
+<<<<<<< HEAD
 
+=======
+    public void showWindow() {
+        this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        this.setLocationRelativeTo(null);
+        this.setVisible(true);
+    }
+>>>>>>> bef1f7b (commit)
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
