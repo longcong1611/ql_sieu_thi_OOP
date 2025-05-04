@@ -17,7 +17,7 @@ import java.awt.event.MouseListener;
 import java.util.List;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-
+import javax.swing.JOptionPane;
 public class ChuyenManHinhController {
     private JPanel root;
     private String kindSelected = "";
