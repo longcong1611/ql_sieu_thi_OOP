@@ -70,7 +70,7 @@ public class ChuyenManHinhController {
                 case "Vitrisanpham":
                     node = new ViTriSPJPanel();
                     break;
-                case "Phieunhap":
+                case "Nhaphang":
                     node = new PhieuNhapJPanel();
                     break;
                 case "Khuyenmai":
