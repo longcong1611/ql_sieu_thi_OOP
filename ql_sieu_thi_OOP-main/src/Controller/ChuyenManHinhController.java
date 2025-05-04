@@ -6,6 +6,7 @@ import GiaoDien.KhachHangJPanel;
 import GiaoDien.SanPhamJPanel;
 import GiaoDien.KhuyenMaiJPanel;
 import GiaoDien.PhieuNhapJPanel;
+import GiaoDien.HoaDonJPanel;
 import GiaoDien.TrangChuJPanel;
 import GiaoDien.ViTriSPJPanel;
 import java.awt.BorderLayout;
@@ -74,6 +75,9 @@ public class ChuyenManHinhController {
                     break;
                 case "Khuyenmai":
                     node = new KhuyenMaiJPanel();
+                    break;
+                case "Hoadon":
+                    node = new HoaDonJPanel();
                     break;
                     default:
                      node = new TrangChuJPanel();   
