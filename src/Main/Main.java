@@ -2,11 +2,11 @@ package Main;
 
 import GiaoDien.DangNhapGUI;
 import GiaoDien.MainJFrame;
-import KetNoiSQL.MyConnect;
+import KetNoiSQL.ConnectToXampp;
 
 public class Main {
     public static void main(String[] args){
-        new MyConnect();
+        new ConnectToXampp();
         
         changLNF("Nimbus");
         DangNhapGUI login = new DangNhapGUI();
