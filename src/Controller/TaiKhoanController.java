@@ -34,11 +34,31 @@ public class TaiKhoanController {
         }
         boolean flag = taiKhoanSQL.themTaiKhoan(maNV, tenDangNhap, phanQuyen);
         if (flag) {
-            new Dialog("Cấp tài khoản thành công! Mật khẩu là" + tenDangNhap, Dialog.SUCCESS_DIALOG);
+            new Dialog("Cấp tài khoản thành công! Mật khẩu là " + tenDangNhap, Dialog.SUCCESS_DIALOG);
         } else {
             new Dialog("Cấp tài khoản thất bại! Tài khoản đã tồn tại", Dialog.ERROR_DIALOG);
         }
         return flag;
+    }
+
+    public boolean xoaTaiKhoan(String ma){
+        try {
+            int maNV = Integer.parseInt(ma);
+            Dialog dlg = new Dialog("Bạn có chắc chắn muốn xoá?", Dialog.WARNING_DIALOG);
+            boolean flag = false;
+            if (dlg.getAction() == Dialog.OK_OPTION) {
+                flag = taiKhoanSQL.deleteTaiKhoan(maNV);
+                if (flag) {
+                    new Dialog("Xoá thành công!", Dialog.SUCCESS_DIALOG);
+                } else {
+                    new Dialog("Xoá thất bại!", Dialog.ERROR_DIALOG);
+                }
+            }
+            return flag;
+        } catch (Exception e) {
+            new Dialog("Chưa chọn nhân viên!", Dialog.ERROR_DIALOG);
+        }
+        return false;
     }
     
     public boolean doiMatKhau(String matKhauCu, String matKhauMoi, String nhapLaiMatKhau){
@@ -62,14 +82,14 @@ public class TaiKhoanController {
         taiKhoanSQL.docDanhSach();
     }
     
-    public boolean updateTaiKhoan(String maTK, String tenDangNhap, String matKhau) {
+    public boolean updateTaiKhoan(String maTK, String tenDangNhap,String matKhau, String quyen) {
         int ma = Integer.parseInt(maTK);
         if (tenDangNhap.trim().equals("")) {
             new Dialog("Không được để trống tên đăng nhập!", Dialog.ERROR_DIALOG);
             return false;
         }
-        if (matKhau.trim().equals("")) {
-            new Dialog("Không được để trống mật khẩu!", Dialog.ERROR_DIALOG);
+        if (quyen.trim().equals("")) {
+            new Dialog("Không được để trống quyền!", Dialog.ERROR_DIALOG);
             return false;
         }
         // Kiểm tra trùng tên đăng nhập với tài khoản khác
@@ -78,7 +98,7 @@ public class TaiKhoanController {
             new Dialog("Tên đăng nhập đã có người sử dụng!", Dialog.WARNING_DIALOG);
             return false;
         }
-        boolean flag = taiKhoanSQL.updateTaiKhoan(ma, tenDangNhap, matKhau);
+        boolean flag = taiKhoanSQL.updateTaiKhoan(ma, tenDangNhap, matKhau, quyen);
         if (flag) {
             new Dialog("Cập nhật tài khoản thành công!", Dialog.SUCCESS_DIALOG);
         } else {

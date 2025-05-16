@@ -110,13 +110,14 @@ public class TaiKhoanSQL {
         }
     }
     
-    public boolean updateTaiKhoan(int maNV, String tenDangNhap, String matKhau) {
+    public boolean updateTaiKhoan(int maNV, String tenDangNhap, String matKhau, String quyen) {
         try {
-            String sql = "UPDATE taikhoan SET TenDangNhap = ?, MatKhau = ? WHERE MaNV = ?";
+            String sql = "UPDATE taikhoan SET TenDangNhap = ?, MatKhau = ?, PhanQuyen=? WHERE MaNV = ?";
             PreparedStatement pre = ConnectToXampp.conn.prepareStatement(sql);
             pre.setString(1, tenDangNhap);
             pre.setString(2, matKhau);
             pre.setInt(3, maNV);
+            pre.setString(4, quyen);
             return pre.executeUpdate() > 0;
         } catch (Exception e) {
         }
@@ -141,6 +142,19 @@ public class TaiKhoanSQL {
             e.printStackTrace();
         }
         return danhSach;
+    }
+
+    public boolean deleteTaiKhoan(int maNV) {
+        boolean result = false;
+        try {
+            String sql = "DELETE FROM taikhoan WHERE MaNV=?";
+            PreparedStatement pre = ConnectToXampp.conn.prepareStatement(sql);
+            pre.setInt(1, maNV);
+            result = pre.executeUpdate() > 0;
+        } catch (SQLException ex) {
+            return false;
+        }
+        return result;
     }
     
 }

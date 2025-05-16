@@ -12,7 +12,7 @@ public class ConnectToXampp {
     public static Connection conn = null;
     static {
         try{
-        String url = "jdbc:mysql://localhost:3307/quanlysieuthi";
+        String url = "jdbc:mysql://localhost:3306/quanlysieuthi";
         String username = "root";
         String password = "";
         conn = DriverManager.getConnection(url, username, password);

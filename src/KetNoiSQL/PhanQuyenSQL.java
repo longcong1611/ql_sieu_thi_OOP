@@ -10,7 +10,7 @@ import java.util.ArrayList;
 public class PhanQuyenSQL {
     public ArrayList<PhanQuyen> getListQuyen(){
         try {
-            String sql = "SELECT * FROM PhanQuyen";
+            String sql = "SELECT * FROM quyen";
             Statement st = ConnectToXampp.conn.createStatement();
             ResultSet rs = st.executeQuery(sql);
             ArrayList<PhanQuyen> dspq = new ArrayList<>();
@@ -32,7 +32,7 @@ public class PhanQuyenSQL {
     
     public PhanQuyen getQuyen(String quyen) {
         try {
-            String sql = "SELECT * FROM PhanQuyen WHERE PhanQuyen='" + quyen + "'";
+            String sql = "SELECT * FROM quyen WHERE Quyen ='" + quyen + "'";
             Statement st = ConnectToXampp.conn.createStatement();
             ResultSet rs = st.executeQuery(sql);
             if (rs.next()) {
@@ -51,7 +51,7 @@ public class PhanQuyenSQL {
     }
     public boolean themQuyen(PhanQuyen phanQuyen) {
         try {
-            String sql = "INSERT INTO phanquyen VALUES (?,?,?,?,?,?)";
+            String sql = "INSERT INTO quyen VALUES (?,?,?,?,?,?)";
             PreparedStatement pre = ConnectToXampp.conn.prepareStatement(sql);
             pre.setString(1, phanQuyen.getQuyen());
             pre.setInt(2, phanQuyen.getNhapHang());
@@ -67,7 +67,7 @@ public class PhanQuyenSQL {
     
     public boolean suaQuyen(PhanQuyen phanQuyen) {
         try {
-            String sql = "UPDATE phanquyen SET NhapHang=?,QLSanPham=?,QLNhanVien=?,QLKhachHang=?,ThongKe=? WHERE Quyen=?";
+            String sql = "UPDATE quyen SET NhapHang=?,QLSanPham=?,QLNhanVien=?,QLKhachHang=?,ThongKe=? WHERE Quyen=?";
             PreparedStatement pre = ConnectToXampp.conn.prepareStatement(sql);
             pre.setInt(1, phanQuyen.getNhapHang());
             pre.setInt(2, phanQuyen.getQlSanPham());
@@ -85,7 +85,7 @@ public class PhanQuyenSQL {
             String sql1 = "UPDATE TaiKhoan SET PhanQuyen='Default' WHERE PhanQuyen='" + phanQuyen + "'";
             Statement st1 = ConnectToXampp.conn.createStatement();
             st1.executeUpdate(sql1);
-            String sql = "DELETE FROM PhanQuyen WHERE Quyen='" + phanQuyen + "'";
+            String sql = "DELETE FROM quyen WHERE Quyen='" + phanQuyen + "'";
             Statement st = ConnectToXampp.conn.createStatement();
             return st.executeUpdate(sql) > 0;
         } catch (Exception e) {
